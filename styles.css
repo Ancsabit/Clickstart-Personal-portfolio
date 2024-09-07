@@ -1,30 +1,48 @@
+header, section#home {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: rgb(255, 251, 251);
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
-    color: #333;
+    color: rgb(255, 251, 251);
 }
 
-.navbar {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+.headings h3 {
+    font-size: 1.3rem;
+}
+
+.headings h1 {
+    font-size: 2.2rem;
+}
+
+.headings h4 {
+    font-size: 1.1rem;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #410303; 
+    background: linear-gradient(to right, #410303, #a80737, #a13947);
     padding: 1rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.logo-heading {
-    color: #fff;
-    margin: 0;
+.logo-img {
+    height: 40px; 
+    width: auto; 
 }
 
 ul {
@@ -40,22 +58,71 @@ ul li {
 }
 
 ul li a {
-    color: #fff;
+    color: rgb(255, 251, 251);
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
     padding: 0.5rem 1.5rem; 
 }
 
 ul li a:hover {
-    background-color: #746262; 
+    background-color: #0f0e0e; 
     border-radius: 4px;
 }
 
-section#Home {
-    padding: 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
+section#home {
+    padding: 0;
+    margin: 0;
+    background-color: #0a0a0a;
+    text-align: left;
+}
+
+.hero {
+    background-image: url(ancsa.portfolio.jpg);
+    background-repeat: no-repeat;
+    background-size: 25%; 
+    background-position: right center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 3rem 4rem; 
+}
+
+.intro {
+    padding-left: 3rem; 
+    padding-right: 1rem; 
+    text-align: left;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.common-btn {
+    background: linear-gradient(to right, #410303, #a80737, #a13947);
+    color: rgb(255, 251, 251);
+}
+
+.common-btn:hover {
+    background: linear-gradient(to right, #410303, #a80737, #a13947);
+}
+
+.ghost-btn {
+    background-color: transparent;
+    color: rgb(255, 251, 251);
+    border: 2px solid #a13947;
+}
+
+.ghost-btn:hover {
+    background: linear-gradient(to right, #410303, #a80737, #a13947);
+    color: rgb(255, 251, 251);
+    border-color: #410303;
 }
 
 
