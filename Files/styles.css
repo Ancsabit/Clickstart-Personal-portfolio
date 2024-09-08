@@ -12,6 +12,7 @@ body {
     color: rgb(255, 251, 251);
     margin: 0;
     padding: 0;
+    background-color: #0f0e0e
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,4 +140,87 @@ section#home {
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     padding: 1rem; 
+}
+/* Portfolio section styles */
+.portfolio {
+    margin: 4.8rem 0;
+    padding: 0 5rem;
+    background-color: #0f0e0e;
+}
+
+.portfolio-heading {
+    text-align: center;
+}
+
+.portfolio-intro {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.course-link {
+    color: #de124f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-link:hover {
+    text-decoration: underline;
+}
+
+.port-card {
+    width: 80%;
+    max-width: 400px;
+    padding:0;
+    background: none;
+    border: 2px solid #ba093e;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1rem auto;
+}
+
+.port-card .image {
+    width: 100%;
+    
+}
+
+.port-card .image img {
+    display: block; 
+    height: 200px;   
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.greet-heading {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.small-para {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.my-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.my-col {
+    flex: 1 1 auto; 
+    margin: 1rem; 
+    display: flex;
+    justify-content: center; 
+}
+
+code {
+    background-color: #350303; 
+    color: #de124f;
+    padding: 0.2rem 0.3rem;
+    border-radius: 8px;
+    display: inline-block; 
+    font-family: 'Courier New', Courier, monospace; 
 }
