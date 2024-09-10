@@ -1,0 +1,152 @@
+/* Base styles for small devices (mobile) */
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    
+    .logo-img {
+        height: 30px;
+    }
+
+    ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .hero {
+        background-size: 50%;
+        padding: 2rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .about-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio {
+        padding: 0 1rem;
+    }
+
+    .contact {
+        padding: 0 1rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-center {
+        gap: 0.5rem; 
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem; 
+    }
+}
+
+/* Styles for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar {
+        flex-direction: row;
+        padding: 1rem 2rem;
+    }
+
+    .logo-img {
+        height: 35px;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    .hero {
+        background-size: 35%;
+        padding: 2.5rem;
+    }
+
+    .about {
+        flex-direction: row;
+    }
+
+    .about .about-image img {
+        width: 400px;
+    }
+
+    .portfolio {
+        padding: 0 2rem;
+    }
+
+    .contact {
+        padding: 0 2rem;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-center {
+        gap: 0.5rem; 
+    }
+
+    .footer-copyright {
+        font-size: 0.8rem;
+    }
+}
+
+/* Styles for larger screens */
+@media (min-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .logo-img {
+        height: 40px;
+    }
+
+    .hero {
+        background-size: 25%;
+        padding: 3rem 4rem;
+    }
+
+    .about .about-text {
+        width: 450px;
+    }
+
+    .about .about-image img {
+        width: 500px;
+    }
+
+    .portfolio {
+        padding: 0 5rem;
+    }
+
+    .contact {
+        padding: 0 5rem;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-center {
+        gap: 0.5rem; 
+    }
+
+    .footer-copyright {
+        font-size: 0.9rem; 
+    }
+}
