@@ -8,5 +8,14 @@ document.querySelectorAll('.port-card .image img').forEach(img => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var form = document.querySelector('iframe');
+    if (form) {
+        form.addEventListener('load', function() {
+            console.log('Google Form is loaded.');
+        });
+    }
+});
+
 
 

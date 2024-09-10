@@ -1,7 +1,9 @@
+/* General styles */
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
-/* body section styles */
+
 body {
     font-family: 'Roboto', sans-serif;
     color: rgb(255, 251, 251);
@@ -10,24 +12,30 @@ body {
     padding-left: 0;
     padding-right: 0;
     background-color: #0f0e0e;
-    scroll-behavior: smooth; 
+    display: flex;
+    flex-direction: column; 
+}
+
+main {
+    flex: 1; 
+    min-height: calc(100vh - 60px); 
+}
+section#home {
+    padding: 0;
+    margin: 0;
+    background-color: #0a0a0a;
+    text-align: left;
+}
+/* Global styles */
+* {
+    box-sizing: border-box;
 }
 
 header, section#home {
     margin: 0;
     padding: 0;
 }
-
-* {
-    box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Slab', serif;
-    color: rgb(255, 251, 251);
-}
-
-/* navbar section styles */
+/* Navbar styles */
 .navbar {
     position: fixed; 
     top: 0; 
@@ -75,9 +83,9 @@ section#home {
     background-color: #0a0a0a;
     text-align: left;
 }
-/* hero section styles */
+/* Hero section styles */
 .hero {
-    background-image: url(portfolio_image.png);
+    background-image: url(homepage_image.png);
     background-repeat: no-repeat;
     background-size: 25%; 
     background-position: right center;
@@ -95,7 +103,8 @@ section#home {
     padding-right: 1rem; 
     text-align: left;
 }
-/* button section styles */
+
+/* Button styles */
 .btn {
     padding: 1rem 2rem;
     border-radius: 10px;
@@ -109,27 +118,24 @@ section#home {
 .common-btn {
     background: linear-gradient(to right, #410303, #a80737, #a13947);
     color: rgb(255, 251, 251);
-    
 }
 
 .common-btn:hover {
     background: linear-gradient(to right, #410303, #a80737, #a13947);
-   
 }
 
 .ghost-btn {
     background-color: transparent;
     color: rgb(255, 251, 251);
     border: 2px solid #a13947;
-    
 }
 
 .ghost-btn:hover {
     background: linear-gradient(to right, #410303, #a80737, #a13947);
     color: rgb(255, 251, 251);
     border-color: #410303;
-    
 }
+
 /* About section styles */
 .about {
     display: flex;
@@ -152,6 +158,7 @@ section#home {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     padding: 1rem; 
 }
+
 /* Portfolio section styles */
 .portfolio {
     margin: 4.8rem 0;
@@ -181,18 +188,16 @@ section#home {
 .port-card {
     width: 80%;
     max-width: 400px;
-    padding:0;
+    padding: 0;
     background: none;
     border: 3px solid #a13947;
     border-radius: 20px;
     overflow: hidden;
     margin: 1rem auto;
-    
 }
 
 .port-card .image {
     width: 100%;
-    
 }
 
 .port-card .image img {
@@ -240,6 +245,7 @@ code {
     display: inline-block; 
     font-family: 'Courier New', Courier, monospace; 
 }
+
 /* Skills section styles */
 .skills {
     display: block;
@@ -301,7 +307,7 @@ code {
 
 .skills-icon i {
     font-size: 60px; 
-    color: #fff;
+    color: rgb(255, 251, 251);
 }
 
 .skills-card:hover .skills-icon {
@@ -325,3 +331,75 @@ code {
     padding-top: 10px; 
 }
 
+/* Contact me section styles */
+iframe {
+    max-width: 100%; 
+    border: none;    
+}
+
+.contact {
+    padding: 0 5rem;
+    margin-top: 2rem; 
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.contact-form-container {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+footer {
+    background-color: #100a0a;
+    padding: 0.5rem 1rem; 
+    border-top: 2px solid #de124f;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+
+.footer-left, .footer-center, .footer-right {
+    margin: 0;
+}
+
+.footer-center {
+    display: flex;
+    gap: 0.5rem; 
+}
+
+.footer-center a {
+    color: #e1e1e1;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.footer-center i {
+    font-size: 1.2rem;
+}
+
+.footer-copyright {
+    margin-top: 0.5rem; 
+    font-size: 0.8rem; 
+}
