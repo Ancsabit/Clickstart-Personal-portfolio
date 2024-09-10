@@ -8,22 +8,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
  <!-- Navbar header section -->    
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="ancsa-logo.png" alt="Ancsa Szabo Logo" class="logo-img">
-            </div>
-            <ul> 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<nav class="navbar">
+  <div class="logo">
+    <a href="#home">
+      <img src="ancsa-logo.png" alt="Ancsa Szabo Logo" class="logo-img">
+    </a>
+  </div>
+  <ul> 
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 <!-- Main hero banner -->
 <section id="home" class="hero">
     <div class="intro">
@@ -31,12 +35,17 @@
             <h3 class="greet-heading">Hello, I'm</h3>
             <h1 class="my-heading">Ancsa Szabo</h1>
             <h4 class="sub-heading">
-                A UX/UI Designer passionate about creating user-centric, engaging, and functional designs.</h4><br>
-                <div class="intro-buttons">
-                    <a href="mailto:ancsa.szabo@sonofabit.ch?subject=Hire Me&body=Hi, I am interested in hiring you for a project." class="btn common-btn">Hire Me</a>
-                    <a href="Ancsa_Szabo_UXUI_CV.pdf" download="Ancsa_Szabo_Resume.pdf" class="btn ghost-btn">Get Resume</a>
-                </div>                
+                A UX/UI Designer passionate about creating user-centric, engaging, and functional designs.
+            </h4><br>
+            <div class="intro-buttons">
+                <a href="https://www.linkedin.com/in/mariancsaszabo/" target="_blank" 
+                class="btn common-btn">Get in Touch</a>
+                <a href="Ancsa_Szabo_UXUI_CV.pdf" download="Ancsa_Szabo_Resume.pdf" class="btn ghost-btn">Get Resume</a>
+            </div>   
+        </div> 
+    </div> 
 </section>
+
  <!-- About Section -->
  <section id="about" class="about">
     <div class="about-text">
@@ -67,9 +76,9 @@
         <h1 class="my-heading text center">My Portfolio</h1>
     </div>
     <p class="portfolio-intro">
-        I'd like to showcase the projects I created through the 
+        I'd like to showcase the projects I created through 
         <a href="https://www.bathspa.ac.uk/courses/click-start/" class="course-link" target="_blank">Click Start course</a>,
-        where I studied web development, UX/UI design, and Digital Marketing. See my projects below.
+        where I studied web development, UX/UI design, and Digital Marketing. Explore my projects below.
     </p>
     
     <div class="portfolio-content">
@@ -77,45 +86,114 @@
             <!-- Personal Website Card -->
             <div class="my-col">
                 <div class="my-card port-card">
-                    <div class="image">
-                        <img src="myportfoliohomepage.png" alt="Personal Website">
-                    </div>
-                    <h3 class="greet-heading">Personal Website</h3>
+                    <a href="https://github.com/Ancsabit/Clickstart-Personal-portfolio" target="_blank"> 
+                        <div class="image">
+                            <img src="myportfoliohomepage.png" alt="Personal Website">
+                        </div>
+                    </a>
+                    <h3 class="greeting">Personal Website</h3>
                     <p class="small-para">
-                        This personal website was created through the Click Start course.<br>
-                        I wanted to showcase my design skills along with my development capabilities.<br>
-                        I used <code>HTML</code>, <code>CSS</code>, and a bit of <code>JavaScript</code> for the coding.<br>
-                        The focus was on minimalism, with gradient colors as a main feature of the design.
+                        This personal website showcases my skills in both design and development. 
+                        I used <code>HTML</code>, <code>CSS</code>, and a bit of <code>JavaScript</code> to craft a seamless and engaging user experience.<br> 
+                        The design is centered around the concept of minimalism, incorporating gradient colors to create a visually striking yet elegant aesthetic.<br> The template used as a starting point for this project was adapted from a GeeksforGeeks template, which provided a solid foundation for the design.
                     </p>
+                                     
                 </div>
             </div>
     
             <!-- UX/UI Design Card -->
             <div class="my-col">
                 <div class="my-card port-card">
-                    <div class="image">
-                        <img src="botiverse_example.png" alt="Figma Project">
-                    </div>
-                    <h3 class="greet-heading">UX/UI Design</h3>
+                    <a href="https://www.figma.com/file/your-figma-file-id" target="_blank">
+                        <div class="image">
+                            <img src="botiverse_example.png" alt="Figma Project">
+                        </div>
+                    </a>
+                    <h3 class="greeting">UX/UI Design</h3>
                     <p class="small-para">
-                        For my client, I created Botiverse, applying the knowledge I gained through the Click Start course.<br>
-                        I used Figma to showcase my wireframing and prototyping abilities, and Miro for creating user personas and other UX-related materials.<br>
-                        The focus was on designing an AI-powered web application that offers extensive customization options for users.
-                    </p>
+                        For this client project, I designed Botiverse, an AI-driven web application with extensive customization options for users.<br>
+                        I utilized Figma to demonstrate my wireframing and prototyping skills and employed Miro to create user personas and other UX-related materials.<br>
+                        This project highlights my ability to apply design principles and tools to create engaging and user-centered digital experiences.
+                    </p>                    
                 </div>
             </div>
     
             <!-- Marketing Blog Card -->
             <div class="my-col">
                 <div class="my-card port-card">
-                    <div class="image">
-                        <img src="marketing_blog.png" alt="Marketing Blog">
-                    </div>
-                    <h3 class="greet-heading">SEO & Content Blog</h3>
+                    <a href="https://branch-helmet-d2d.notion.site/61c5b2127ae640459c9f3ea0ae3a43a2?v=f175ecc704ae44c48a3cef4ca3e57a76" target="_blank">
+                        <div class="image">
+                            <img src="marketing_blog.png" alt="Marketing Blog">
+                        </div>
+                    </a>
+                    <h3 class="greeting">SEO & Content Blog</h3>
                     <p class="small-para">
-                        Created as part of the Click Start course, this blog features custom design elements and content strategies.<br>
-                        It highlights my skills in content creation and user engagement, demonstrating my approach to SEO and content optimization.<br>
-                        Note that this project is illustrative and the URL is for example purposes only.
+                        This blog features a tailored design and strategic content, highlighting my skills in content creation and user engagement.<br>
+                        It demonstrates my approach to SEO and content optimization, reflecting my capability to craft engaging and effective content.<br>
+                        Please be aware that this project serves as an illustration, and the URL included is for example purposes only.
+                    </p>                                       
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skills Section -->
+<section class="skills" id="skills">
+    <div class="skills-heading">
+        <h1 class="skills-heading-text">My Skills</h1>
+    </div>
+    <div class="skills-content">
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-card">
+                    <div class="skills-icon">
+                        <i class="fas fa-pencil-alt"></i> 
+                    </div>
+                    <h3 class="skills-heading-text">UX/UI Design</h3>
+                    <p class="skills-description">
+                        I create user-centric designs that effectively balance creativity and functionality.
+                        My focus is on building visually engaging, interactive interfaces that deliver intuitive, 
+                        seamless, and memorable user experiences.
+                        </p>
+                </div>
+            </div>
+            <div class="skills-col">
+                <div class="skills-card">
+                    <div class="skills-icon">
+                        <i class="fas fa-laptop"></i> 
+                    </div>
+                    <h3 class="skills-heading-text">Web Design</h3>
+                    <p class="skills-description">
+                        I design user-friendly, visually compelling websites by integrating UX/UI principles with 
+                        development and digital marketing strategies. This method guarantees engaging designs that boost 
+                        interaction and achieve business objectives.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="skills-row">
+            <div class="skills-col">
+                <div class="skills-card">
+                    <div class="skills-icon">
+                        <i class="fas fa-pen"></i> 
+                    </div>
+                    <h3 class="skills-heading-text">Content Marketing</h3>
+                    <p class="skills-description">
+                        Experienced in content marketing with a focus on creating and optimizing content for SEO.
+                        My work, such as the SEO & Content Blog project, demonstrates my ability to craft engaging, strategic content.
+                    </p>
+                </div>
+            </div>
+            <div class="skills-col">
+                <div class="skills-card">
+                    <div class="skills-icon">
+                        <i class="fas fa-images"></i> 
+                    </div>
+                    <h3 class="skills-heading-text">Visual Design</h3>
+                    <p class="skills-description">
+                        Proficient in applying design principles, typography, and color palettes to create visually appealing 
+                        and impactful websites. My focus is on crafting engaging visual experiences that captivate users and enhance
+                        overall design effectiveness.
                     </p>
                 </div>
             </div>
@@ -124,5 +202,6 @@
 </section>
 <footer>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

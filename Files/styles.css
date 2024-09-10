@@ -1,3 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+/* body section styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 251, 251);
+    margin: 0;
+    padding-top: 80px; 
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #0f0e0e;
+    scroll-behavior: smooth; 
+}
+
 header, section#home {
     margin: 0;
     padding: 0;
@@ -5,14 +20,6 @@ header, section#home {
 
 * {
     box-sizing: border-box;
-}
-/* body section styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    color: rgb(255, 251, 251);
-    margin: 0;
-    padding: 0;
-    background-color: #0f0e0e
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,6 +29,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* navbar section styles */
 .navbar {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,7 +77,7 @@ section#home {
 }
 /* hero section styles */
 .hero {
-    background-image: url(ancsa.portfolio.jpg);
+    background-image: url(portfolio_image.png);
     background-repeat: no-repeat;
     background-size: 25%; 
     background-position: right center;
@@ -172,10 +183,11 @@ section#home {
     max-width: 400px;
     padding:0;
     background: none;
-    border: 2px solid #ba093e;
+    border: 3px solid #a13947;
     border-radius: 20px;
     overflow: hidden;
     margin: 1rem auto;
+    
 }
 
 .port-card .image {
@@ -191,7 +203,11 @@ section#home {
     border-top-left-radius: 20px;
 }
 
-.greet-heading {
+.port-card img:hover {
+    transform: scale(1.05);
+}
+
+.greeting {
     font-size: 1.5rem;
     margin: 1rem 0;
     padding: 1rem;
@@ -217,10 +233,95 @@ section#home {
 }
 
 code {
-    background-color: #350303; 
+    background-color: #5b0505; 
     color: #de124f;
     padding: 0.2rem 0.3rem;
     border-radius: 8px;
     display: inline-block; 
     font-family: 'Courier New', Courier, monospace; 
 }
+/* Skills section styles */
+.skills {
+    display: block;
+    background-color: #2e0202;
+    width: 100%;
+    padding: 3rem;
+}
+
+.skills-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
+
+.skills-col {
+    flex: 1 1 45%; 
+    margin: 1rem; 
+    display: flex;
+    justify-content: center; 
+}
+
+.skills-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #550404, #a80737, #840606);
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px; 
+    height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+}
+
+.skills-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.skills-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #100a0a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem; 
+    transition: transform 0.3s ease; 
+}
+
+.skills-icon i {
+    font-size: 60px; 
+    color: #fff;
+}
+
+.skills-card:hover .skills-icon {
+    transform: scale(1.15); 
+}
+
+.skills-heading-text {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.skills-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    opacity: 0.9; 
+    transition: opacity 0.3s ease, padding 0.3s ease;
+}
+
+.skills-card:hover .skills-description {
+    opacity: 1; 
+    padding-top: 10px; 
+}
+

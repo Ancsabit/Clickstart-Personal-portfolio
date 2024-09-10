@@ -1,0 +1,12 @@
+document.querySelectorAll('.port-card .image img').forEach(img => {
+    img.addEventListener('click', function() {
+        const parentCard = this.closest('.port-card'); 
+        const link = parentCard.querySelector('a');
+        if (link) {
+            window.open(link.href, '_blank');
+        }
+    });
+});
+
+
+
